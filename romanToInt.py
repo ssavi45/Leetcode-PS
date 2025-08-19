@@ -15,6 +15,7 @@ class Solution:
         prev_value = 0
         for char in s:
             value = roman_to_int[char]
+            #value = roman_to_int.get(char, 0)
             if value > prev_value:
                 total += value - 2 * prev_value
             else:
